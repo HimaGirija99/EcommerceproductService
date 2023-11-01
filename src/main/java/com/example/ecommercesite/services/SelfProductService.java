@@ -4,7 +4,7 @@ import com.example.ecommercesite.repository.ProductRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
+
 public class SelfProductService implements IProductService{
 
         ProductRepo productRepo;
