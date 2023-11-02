@@ -1,7 +1,7 @@
 package com.example.ecommercesite.services;
+
 import com.example.ecommercesite.models.Product;
 import com.example.ecommercesite.repository.ProductRepo;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
