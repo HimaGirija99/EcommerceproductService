@@ -44,14 +44,14 @@ public class fakeStoreProductService implements IProductService {
 
     @Override
     public List<Product> getAllProducts() {
-//        RestTemplate restTemplate = restTemplateBuilder.build();
-//        ResponseEntity<ProductDto[]> productDtos =
-//                restTemplate
-//                        .getForEntity("https://fakestoreapi.com/products", ProductDto[].class);
-//
+       /*RestTemplate restTemplate = restTemplateBuilder.build();
+       ResponseEntity<ProductDto[]> productDtos =
+                restTemplate
+                       .getForEntity("https://fakestoreapi.com/products", ProductDto[].class);*/
 
-        List<FakeStoreProductDto> fakeStoreProductDtos = fakeStoreClient.getAllProducts();        List<Product> answer = new ArrayList<>();
 
+        List<FakeStoreProductDto> fakeStoreProductDtos = fakeStoreClient.getAllProducts();
+        List<Product> answer = new ArrayList<>();
         for (@Nonnull FakeStoreProductDto productDto: fakeStoreProductDtos) {
             Product product = getProduct(productDto);
             answer.add(product);
