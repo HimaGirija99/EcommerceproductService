@@ -1,15 +1,17 @@
-package com.example.ecommercesite.repository;
+package com.example.eCommerceSite.repository;
 
 
-import com.example.ecommercesite.models.Categories;
+import com.example.eCommerceSite.models.Categories;
+import lombok.NonNull;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-    @Repository
+@Repository
     public interface CategoryRepo extends JpaRepository<Categories, Long> {
-        Categories save(Categories categories);
+
+        @NonNull Categories save(@NonNull Categories categories);
 
         Categories findById(long id);
 

@@ -1,4 +1,4 @@
-package com.example.ecommercesite;
+package com.example.eCommerceSite;
 
 import org.hamcrest.Description;
 import org.hamcrest.Factory;

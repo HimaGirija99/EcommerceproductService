@@ -1,13 +1,14 @@
-package com.example.ecommercesite.services;
+package com.example.eCommerceSite.services;
 
-import com.example.ecommercesite.clients.fakestore.Dto.FakeStoreProductDto;
-import com.example.ecommercesite.clients.fakestore.client.FakeStoreClient;
-import com.example.ecommercesite.models.Categories;
-import com.example.ecommercesite.models.Product;
+import com.example.eCommerceSite.clients.fakestore.Dto.FakeStoreProductDto;
+import com.example.eCommerceSite.clients.fakestore.client.FakeStoreClient;
+import com.example.eCommerceSite.models.Categories;
+import com.example.eCommerceSite.models.Product;
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
@@ -20,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
+@Primary
 @Service
 public class fakeStoreProductService implements IProductService {
 

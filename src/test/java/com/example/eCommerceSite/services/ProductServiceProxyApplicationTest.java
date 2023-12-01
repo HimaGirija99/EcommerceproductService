@@ -1,13 +1,11 @@
-package com.example.ecommercesite;
+package com.example.eCommerceSite.services;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ECommerceSiteApplicationTests {
-
+public class ProductServiceProxyApplicationTest {
     @Test
     void contextLoads() {
     }
-
 }

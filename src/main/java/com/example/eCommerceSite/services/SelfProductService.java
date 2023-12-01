@@ -1,7 +1,7 @@
-package com.example.ecommercesite.services;
+package com.example.eCommerceSite.services;
 
-import com.example.ecommercesite.models.Product;
-import com.example.ecommercesite.repository.ProductRepo;
+import com.example.eCommerceSite.models.Product;
+import com.example.eCommerceSite.repository.ProductRepo;
 
 import java.util.List;
 

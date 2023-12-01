@@ -1,5 +1,5 @@
-package com.example.ecommercesite.clients.fakestore.DummyStore.Dto;
-import com.example.ecommercesite.dtos.RatingDto;
+package com.example.eCommerceSite.clients.fakestore.DummyStore.Dto;
+import com.example.eCommerceSite.dtos.RatingDto;
 public class DummyStoreProductDto {
         private Long id;
         private String title;
