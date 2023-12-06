@@ -1,4 +1,4 @@
-package com.example.eCommerceSite.services;
+package com.example.eCommerceSite.models;
 
 public class Calculator {
 

@@ -26,7 +26,7 @@ CREATE TABLE jt_mentor
 CREATE TABLE jt_ta
 (
     user_id BIGINT NOT NULL,
-    rating  DOUBLE NOT NULL,
+    rating DOUBLE NOT NULL,
     CONSTRAINT pk_jt_ta PRIMARY KEY (user_id)
 );
 
@@ -58,9 +58,9 @@ CREATE TABLE mps_mentor
 
 CREATE TABLE mps_ta
 (
-    id     BIGINT NOT NULL,
-    name   VARCHAR(255) NULL,
-    email  VARCHAR(255) NULL,
+    id    BIGINT NOT NULL,
+    name  VARCHAR(255) NULL,
+    email VARCHAR(255) NULL,
     rating DOUBLE NOT NULL,
     CONSTRAINT pk_mps_ta PRIMARY KEY (id)
 );
@@ -72,7 +72,7 @@ CREATE TABLE product
     last_updated_at datetime NULL,
     is_deleted      BIT(1) NOT NULL,
     title           VARCHAR(255) NULL,
-    price           DOUBLE NOT NULL,
+    price DOUBLE NOT NULL,
     `description`   VARCHAR(255) NULL,
     category_id     BIGINT NULL,
     image_url       VARCHAR(255) NULL,
@@ -87,19 +87,10 @@ CREATE TABLE sc_user
     user_type INT NULL,
     name      VARCHAR(255) NULL,
     email     VARCHAR(255) NULL,
-    rating    DOUBLE NOT NULL,
     grad_year INT    NOT NULL,
+    rating DOUBLE NOT NULL,
     company   VARCHAR(255) NULL,
     CONSTRAINT pk_sc_user PRIMARY KEY (id)
-);
-
-CREATE TABLE something
-(
-    id              BIGINT NOT NULL,
-    created_at      datetime NULL,
-    last_updated_at datetime NULL,
-    is_deleted      BIT(1) NOT NULL,
-    CONSTRAINT pk_something PRIMARY KEY (id)
 );
 
 CREATE TABLE tbc_user
@@ -130,9 +121,9 @@ CREATE TABLE tpc_mentor
 
 CREATE TABLE tpc_ta
 (
-    id     BIGINT NOT NULL,
-    name   VARCHAR(255) NULL,
-    email  VARCHAR(255) NULL,
+    id    BIGINT NOT NULL,
+    name  VARCHAR(255) NULL,
+    email VARCHAR(255) NULL,
     rating DOUBLE NOT NULL,
     CONSTRAINT pk_tpc_ta PRIMARY KEY (id)
 );

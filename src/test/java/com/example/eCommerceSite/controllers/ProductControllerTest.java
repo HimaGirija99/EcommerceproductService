@@ -37,7 +37,7 @@ class ProductControllerTest {
     @Captor
     private ArgumentCaptor<Long> idCaptor;
 
-    //@Test
+    @Test
     void test_whenGetProductIsCalled_ReturnProducts() {
         Product product = new Product();
         product.setId(2l);

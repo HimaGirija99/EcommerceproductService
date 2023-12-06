@@ -1,10 +1,10 @@
 package com.example.eCommerceSite;
 
 import org.hamcrest.Description;
-import org.hamcrest.Factory;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestFactory;
 
 import java.util.Arrays;
 
@@ -17,15 +17,15 @@ public class test {
         String str = "calligraphy";
         assertThat(str, stringContainsInOrder(Arrays.asList("call", "graph")));
     }
-    public static class IsPositiveInteger extends TypeSafeMatcher<Integer> {
+    public static class isPositiveInteger extends TypeSafeMatcher<Integer> {
 
         public void describeTo(Description description) {
             description.appendText("a positive integer");
         }
 
-        @Factory
+        @TestFactory
         public Matcher<Integer> isAPositiveInteger() {
-            return new IsPositiveInteger();
+            return new isPositiveInteger();
         }
 
         @Override
