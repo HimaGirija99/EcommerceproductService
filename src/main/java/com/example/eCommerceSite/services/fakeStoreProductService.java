@@ -89,15 +89,12 @@ public class fakeStoreProductService implements IProductService {
 
     @Override
     public Product updateProduct(Long productId, Product product) {
-
-
         FakeStoreProductDto fakeStoreProductDto = new FakeStoreProductDto();
         fakeStoreProductDto.setDescription(product.getDescription());
         fakeStoreProductDto.setImage(product.getImageUrl());
         fakeStoreProductDto.setPrice(product.getPrice());
         fakeStoreProductDto.setTitle(product.getTitle());
         fakeStoreProductDto.setCategory(product.getCategory().getName());
-
         ResponseEntity<FakeStoreProductDto> fakeStoreProductDtoResponseEntity
                 = requestForEntity(
                 HttpMethod.PATCH,
@@ -106,7 +103,6 @@ public class fakeStoreProductService implements IProductService {
                 FakeStoreProductDto.class,
                 productId
         );
-
         FakeStoreProductDto fakeStoreProductDto1 = fakeStoreProductDtoResponseEntity.getBody();
         assert fakeStoreProductDto1 != null;
         return getProduct(fakeStoreProductDto1);

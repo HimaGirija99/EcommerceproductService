@@ -11,5 +11,4 @@ import lombok.Setter;
 @PrimaryKeyJoinColumn(name = "user_id")
 public class Mentor extends User {
     private int gradYear;
-
 }
